@@ -4,12 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        a={}
+        dict={}
         for i in nums:
-            if i in a.keys():
-                a[i]+=1
+            if i in dict.keys():
+                dict[i]+=1
             else:
-                a[i]=1    
-        for key in a:
-            if(a[key] == 1):
+                dict[i]=1    
+        for key in dict:
+            if(dict[key] == 1):
                 return key
